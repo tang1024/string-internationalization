@@ -1,0 +1,37 @@
+# C
+*.c eol=lf
+*.h eol=lf
+
+# C++
+*.cpp eol=lf
+*.hpp eol=lf
+*.ixx eol=lf
+
+# Scripting
+*.sh eol=lf
+*.py eol=lf
+
+# Config
+*.json eol=lf
+*.yml eol=lf
+
+# Clang
+.clang-format eol=lf
+.clang-tidy eol=lf
+
+# Plain Text
+*.txt eol=lf
+*.md eol=lf
+*.rst eol=lf
+
+# Github
+.gitignore eol=lf
+.gitattributes eol=lf
+LICENSE eol=lf
+
+# Files that should not be normalized
+*.png -text
+*.jpg -text
+
+*.lib -text
+*.exe -text

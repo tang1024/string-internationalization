@@ -1,0 +1,7 @@
+# root
+.git/
+.vs/
+3rdparty/
+build_msvc/
+build_clangcl/
+target/

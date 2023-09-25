@@ -1,0 +1,71 @@
+---
+BasedOnStyle: LLVM
+# eol, tab/space
+UseCRLF: false # deprecated, clang-format 10
+LineEnding: LF # clang-format 16
+UseTab: Never
+# text width
+ColumnLimit: 100
+# c++ version
+Standard: Latest
+# misc
+SortIncludes: false
+# whitespace, indentation
+IndentWidth: 4
+NamespaceIndentation: All             # namespace
+IndentExternBlock: AfterExternBlock   # extern "C"
+SpaceInEmptyParentheses: false
+# comments
+ReflowComments: false       # comments
+#PenaltyBreakComment: 888   # comments
+# braces
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true          # linux kernel
+  SplitEmptyFunction: true
+  AfterNamespace: true         # namespace
+  SplitEmptyNamespace: true
+  AfterClass: false
+  AfterStruct: false           # linux kernel
+  SplitEmptyRecord: true
+  # others false
+  AfterExternBlock: true       # extern "C"
+  AfterEnum: false             # linux kernel
+  AfterControlStatement: false # linux kernel
+  BeforeElse: false            # linux kernel
+  AfterUnion: false
+  BeforeCatch: false
+  IndentBraces: false
+  AfterObjCDeclaration: false
+# break into newline
+AllowShortBlocksOnASingleLine: false
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: false
+AllowShortIfStatementsOnASingleLine: false
+AllowShortLambdasOnASingleLine: false
+AllowShortLoopsOnASingleLine: false
+#BreakAfterAttributes: Always
+AlwaysBreakTemplateDeclarations: Yes      # template<>
+PenaltyReturnTypeOnItsOwnLine: 888        # function declaration return type
+AlwaysBreakAfterDefinitionReturnType: None
+AlwaysBreakAfterReturnType: None          # function declaration return type
+AllowShortFunctionsOnASingleLine: None    # funciton definition
+BreakConstructorInitializers: BeforeComma # constructor initializers 
+AlwaysBreakBeforeMultilineStrings: false  # string
+BreakStringLiterals: false                # string
+BreakBeforeBinaryOperators: NonAssignment # break before operators but after assignments
+PenaltyBreakAssignment: 888               # assignments
+# pointer, reference
+PointerAlignment: Right
+ReferenceAlignment: Right
+# structure
+AlignArrayOfStructures: Right
+# function
+PackConstructorInitializers: CurrentLine
+AlignAfterOpenBracket: Align
+BinPackArguments: false                          # arguments
+AllowAllArgumentsOnNextLine: false               # arguments
+BinPackParameters: false                         # parameters
+AllowAllParametersOfDeclarationOnNextLine: false # parameters
+...
